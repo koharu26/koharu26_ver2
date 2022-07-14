@@ -1,0 +1,51 @@
+
+/* ページ全体の指定 */
+body {
+  margin: 0px;
+  font-family: "Yu Gothic UI", "Meiryo UI", sans-serif;
+}
+
+/* ヘッダー */
+.header_all {
+  width: 100%;
+  height: 100px;
+}
+
+.header_contents {
+  width: 90%;
+  margin: 0px auto;
+  border-bottom: 1px solid #ece0e0;
+
+  /* ヘッダレフトとヘッダライトを横並びにする + 上下中央揃え */
+  display: flex;
+  align-items: center;
+}
+
+.header_left {
+  /* ロゴと説明文を横並びにする + 上下中央揃え */
+  display: flex;
+  align-items: center;
+}
+
+.header_left_logo {
+  margin-right: 30px;
+}
+
+.header_left_title {
+  color: #7b7070;
+  font-size: 14px;
+}
+
+.header_right {
+  margin-left: auto;
+
+  /* リンクを横並びにする + 上下中央揃え */
+  display: flex;
+  align-items: center;
+}
+
+.header_right_login, .header_right_sitemap, .header_right_help {
+  color: #7b7070;
+  font-size: 14px;
+  margin: 0px 10px;
+}
