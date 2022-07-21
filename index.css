@@ -8,7 +8,7 @@ body {
 /* ■■■ ヘッダー ■■■ */
 .header_all {
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 
 .header_contents {
@@ -52,10 +52,12 @@ body {
 
 
 /* ■■■ メニュー ■■■ */
+
+/* メニュー（タイトル） */
 .menu_all {
   width: 100%;
-  height: 100px;
-  margin-top: 20px;
+  height: 100%;
+  margin-top: 30px;
 }
 
 .menu_contents {
@@ -63,17 +65,47 @@ body {
   margin: 0px auto;
 
   /* メニューを横並びにする + 上下中央揃え */
-  display: flex;
-  align-items: center;
+  /* display: flex;
+     align-items: center; */
 }
 
-.menu_main1, .menu_main2, .menu_main3, .menu_main4 {
+/* .menu_main1, .menu_main2, .menu_main3, .menu_main4 {
   width: 25%;
   text-align: center;
   border-right: 1px solid #ece0e0;
   font-size: 14px;
-}
+} 
 
 .menu_main1 {
   border-left: 1px solid #ece0e0;
+} */
+
+.menu_dropdown {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
+
+.menu_dropdown, .menu_sub {
+  list-style-type: none;
+}
+
+.menu_title {
+  width: 25%;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 14px;
+  border-right: 1px solid #ece0e0;
+}
+
+.menu_dropdown a {
+  text-align: center;
+}
+
+.menu_sub {
+
+  margin: 0px;
+  padding: 0px;
+}
+
