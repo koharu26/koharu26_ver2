@@ -1,6 +1,7 @@
 /* ■■■ ページ全体の指定 ■■■*/
 body {
   margin: 0px;
+  padding: 0px;
   font-family: "Yu Gothic UI", "Meiryo UI", sans-serif;
 }
 
@@ -95,10 +96,16 @@ body {
 }
 
 .submenu_list1, .submenu_list2, .submenu_list3, .submenu_list4 {
-  display: block;
   height: 46.4px;
   font-size: 14px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ece0e0;
+}
+
+.submenu_list1 {
+  border-left: 1px solid #ece0e0;
 }
 
 
