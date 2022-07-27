@@ -74,6 +74,7 @@ body {
   width: 25%;
   text-align: center;
   border-right: 1px solid #ece0e0;
+  border-bottom: 1px solid #ece0e0;
   font-size: 14px;
 } 
 
@@ -101,13 +102,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #ece0e0;
+  border-bottom: 1px solid #ece0e0;
 }
 
-.submenu_list1 {
-  border-left: 1px solid #ece0e0;
+.submenu_main1 {
+  visibility: hidden;
 }
-
 
 
 
