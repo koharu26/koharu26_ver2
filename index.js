@@ -1,5 +1,5 @@
 
-// メニューにマウスオーバーするとサブメニューが開く
+// ■■メニューにマウスオーバーするとサブメニューが開く■■
 
 // メニュー1
 const menu1 = document.getElementById('menu_main1');
@@ -76,7 +76,7 @@ submenu3.addEventListener('mouseleave', function() {
 }, false);
 
 
-// メニュー3
+// メニュー4
 const menu4 = document.getElementById('menu_main4');
 const submenu4 = document.getElementById('submenu_main4');
 
@@ -100,4 +100,22 @@ submenu4.addEventListener('mouseleave', function() {
   submenu4.style.opacity = 0;
 }, false);
 
+
+// ■■センター画像が時間経過で切り替わる■■
+
+let imgs_src = ["img/Main_01.jpg", "img/Main_02.jpg", "img/Main_03.jpg"];
+let num = -1;
+
+change_image();
+
+function change_image() {
+  if (num == 2){
+    num = 0;
+  }
+  else {
+    num ++;
+  }
+  document.getElementById("center_image").src = imgs_src[num];
+  setTimeout("change_image()", 4000);
+};
 
