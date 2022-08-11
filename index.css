@@ -3,6 +3,8 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Yu Gothic UI", "Meiryo UI", sans-serif;
+  max-width: 1080px;
+  margin: 0px auto;
 }
 
 
@@ -115,7 +117,6 @@ body {
 /* ■■■ センター ■■■ */
 .center_all {
   width: 100%;
-  height: 100%;
   margin-top: 30px;
 }
 
@@ -124,10 +125,11 @@ body {
   height: 300px;
   margin: 0px auto;
   position: relative;
-  top: -125px;
+  top: -100px;
   text-align: center;
 }
 
+/* 画像の切り替え（jsと連携）*/
 #center_image {
   width: 100%;
   height: 300px;
@@ -151,4 +153,29 @@ body {
 	100% {
 		opacity: 0;
 	}
+}
+
+
+/* ■■■ センター下文言 ■■■ */
+.center_word {
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 500px; /* 後で消す */
+}
+
+.center_word_contents {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.search_button {
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(90, 118, 148);
+  border: 0px;
+  border-radius: 8px;
+  cursor: pointer;
 }
