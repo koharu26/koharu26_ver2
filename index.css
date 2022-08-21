@@ -101,7 +101,7 @@ body {
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.6s;
+  transition: all 0.5s;
 }
 
 .submenu_list1, .submenu_list2, .submenu_list3, .submenu_list4 {
@@ -160,7 +160,7 @@ body {
 .center_word {
   width: 100%;
   margin-top: -50px;
-  margin-bottom: 500px; /* 後で消す */
+
 }
 
 .center_word_contents {
@@ -178,4 +178,58 @@ body {
   border: 0px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+
+/* ■■■ 検索フォーム ■■■ */
+.search_all {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.search_contents {
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 500px; /* 後で消す */
+}
+
+.search_pulldown {
+  padding: 15px;
+  font-size: 15px;
+  border: 1px solid rgba(112, 133, 162, 0.401);
+  border-radius: 30px;
+}
+
+.search_condition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.search_condition tr {
+  border-left: 5px solid rgba(112, 133, 162, 0.401);
+  border-bottom: 0.5px dashed rgba(112, 133, 162, 0.401);
+}
+
+.search_condition td {
+  padding: 10px;
+}
+
+.search_condition select {
+  font-size: 14px;
+}
+
+.conditon_1 {
+  width: 20%;
+  font-size: 14px;
+}
+
+.conditon_2 {
+  width: 10%;
+  color: red;
+  font-size: 14px;
+}
+
+.conditon_3 {
+  width: 70%;
+  font-size: 14px;
 }
