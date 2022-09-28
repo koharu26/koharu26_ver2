@@ -107,8 +107,8 @@
       <!-- ■■■ センター下文言 ■■■ -->
       <div class = "center_word">
         <div class = "center_word_contents">
-          <p>早速QAエンジニアを探してみましょう！</p>
-          <button type = "button" class = "search_button">QAエンジニアを検索する</button> 
+          <p>以下の検索フォームから、早速QAエンジニアを探してみましょう！</p>
+          <!-- <button type = "button" class = "search_button">QAエンジニアを検索する</button> -->
         </div>
       </div>
 
@@ -120,11 +120,150 @@
             <div class = "search_condition">
               <table>
                 <tr>
+                  <td class = "conditon_1"><label for = "date_start">勤務地エリア</label>
+                  <td class = "conditon_2"><span>必須</span></td>
+                  <td class = "conditon_3">
+                    <select class = "search_pulldown_area" name = "area">
+                      <option value = ""></option>
+                      <option value = "hokkaido">北海道</option>
+                      <option value = "touhoku">東北</option>
+                      <option value = "kanto">関東</option>
+                      <option value = "chubu">中部</option>
+                      <option value = "kinki">近畿</option>
+                      <option value = "chugoku">中国</option>
+                      <option value = "shikoku">四国</option>
+                      <option value = "kyushu">九州</option>
+                      <option value = "okinawa">沖縄</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
                   <td class = "conditon_1"><label for = "date_start">日付（勤務開始日）</label>
                   <td class = "conditon_2"><span>必須</span></td>
-                  <td class = "conditon_3"><select class = "search_pulldown" name = "year">
-                    <option value = "">選択してください</option>
-                  </select></td>
+                  <td class = "conditon_3">
+                    <select class = "search_pulldown_ymd" name = "s_year">
+                      <option value = ""></option>
+                      <option value = "2022">2022</option>
+                      <option value = "2023">2023</option>
+                    </select><span>　年　</span>
+                    <select class = "search_pulldown_ymd" name = "s_month">
+                      <option value = ""></option>
+                      <option value = "01">01</option>
+                      <option value = "02">02</option>
+                      <option value = "03">03</option>
+                      <option value = "04">04</option>
+                      <option value = "05">05</option>
+                      <option value = "06">06</option>
+                      <option value = "07">07</option>
+                      <option value = "08">08</option>
+                      <option value = "09">09</option>
+                      <option value = "10">10</option>
+                      <option value = "11">11</option>
+                      <option value = "12">12</option>
+                    </select><span>　月　</span>
+                    <select class = "search_pulldown_ymd" name = "s_day">
+                      <option value = ""></option>
+                      <option value = "01">01</option>
+                      <option value = "02">02</option>
+                      <option value = "03">03</option>
+                      <option value = "04">04</option>
+                      <option value = "05">05</option>
+                      <option value = "06">06</option>
+                      <option value = "07">07</option>
+                      <option value = "08">08</option>
+                      <option value = "09">09</option>
+                      <option value = "10">10</option>
+                      <option value = "11">11</option>
+                      <option value = "12">12</option>
+                      <option value = "13">13</option>
+                      <option value = "14">14</option>
+                      <option value = "15">15</option>
+                      <option value = "16">16</option>
+                      <option value = "17">17</option>
+                      <option value = "18">18</option>
+                      <option value = "19">19</option>
+                      <option value = "20">20</option>
+                      <option value = "21">21</option>
+                      <option value = "22">22</option>
+                      <option value = "23">23</option>
+                      <option value = "24">24</option>
+                      <option value = "25">25</option>
+                      <option value = "26">26</option>
+                      <option value = "27">27</option>
+                      <option value = "28">28</option>
+                      <option value = "29">29</option>
+                      <option value = "30">30</option>
+                      <option value = "31">31</option>
+                    </select><span>　日　</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class = "conditon_1"><label for = "date_end">日付（勤務終了日）</label>
+                  <td class = "conditon_2"><span>必須</span></td>
+                  <td class = "conditon_3">
+                    <select class = "search_pulldown_ymd" name = "e_year">
+                      <option value = ""></option>
+                      <option value = "2022">2022</option>
+                      <option value = "2023">2023</option>
+                    </select><span>　年　</span>
+                    <select class = "search_pulldown_ymd" name = "e_month">
+                      <option value = ""></option>
+                      <option value = "01">01</option>
+                      <option value = "02">02</option>
+                      <option value = "03">03</option>
+                      <option value = "04">04</option>
+                      <option value = "05">05</option>
+                      <option value = "06">06</option>
+                      <option value = "07">07</option>
+                      <option value = "08">08</option>
+                      <option value = "09">09</option>
+                      <option value = "10">10</option>
+                      <option value = "11">11</option>
+                      <option value = "12">12</option>
+                    </select><span>　月　</span>
+                    <select class = "search_pulldown_ymd" name = "e_day">
+                      <option value = ""></option>
+                      <option value = "01">01</option>
+                      <option value = "02">02</option>
+                      <option value = "03">03</option>
+                      <option value = "04">04</option>
+                      <option value = "05">05</option>
+                      <option value = "06">06</option>
+                      <option value = "07">07</option>
+                      <option value = "08">08</option>
+                      <option value = "09">09</option>
+                      <option value = "10">10</option>
+                      <option value = "11">11</option>
+                      <option value = "12">12</option>
+                      <option value = "13">13</option>
+                      <option value = "14">14</option>
+                      <option value = "15">15</option>
+                      <option value = "16">16</option>
+                      <option value = "17">17</option>
+                      <option value = "18">18</option>
+                      <option value = "19">19</option>
+                      <option value = "20">20</option>
+                      <option value = "21">21</option>
+                      <option value = "22">22</option>
+                      <option value = "23">23</option>
+                      <option value = "24">24</option>
+                      <option value = "25">25</option>
+                      <option value = "26">26</option>
+                      <option value = "27">27</option>
+                      <option value = "28">28</option>
+                      <option value = "29">29</option>
+                      <option value = "30">30</option>
+                      <option value = "31">31</option>
+                    </select><span>　日　</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class = "conditon_1"><label for = "date_start">希望ポジション</label>
+                  <td class = "conditon_2"><span></span></td>
+                  <td class = "conditon_3">
+                    <label class = "search_input_position"><input type = "checkbox" name = "position" value = "pl"><span class = "checkmark"></span>PL</label>
+                    <label class = "search_input_position"><input type = "checkbox" name = "position" value = "sublead"><span class = "checkmark"></span>サブリード</label>
+                  </td>
                 </tr>
               </table>
             </div>
@@ -132,6 +271,14 @@
         </div>
       </form>
 
+
+
+      <!-- ■■■ 検索フォーム下文言 ■■■ -->
+        <div class = "center_word_2">
+          <div class = "center_word_contents_2">
+            <button type = "button" class = "search_button">QAエンジニアを検索する</button>
+          </div>
+        </div>
 
 
 
