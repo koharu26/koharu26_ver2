@@ -103,7 +103,7 @@ submenu4.addEventListener('mouseleave', function() {
 
 // ■■センター画像が時間経過で切り替わる■■
 
-let imgs_src = ["img/Test_01.jpg", "img/Main_02.jpg", "img/Main_03.jpg"];
+let imgs_src = ["img/Test_01.jpg", "img/Test_02.jpg", "img/Test_03.jpg"];
 let num = -1;
 
 change_image();
