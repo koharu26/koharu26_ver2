@@ -1,0 +1,107 @@
+/* ■■■ ページ全体の指定 ■■■*/
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Yu Gothic UI", "Meiryo UI", sans-serif;
+  max-width: 1080px;
+  margin: 0px auto;
+}
+
+
+/* ■■■ ヘッダー ■■■ */
+.header_all {
+  width: 100%;
+  height: 100%;
+}
+
+.header_contents {
+  width: 90%;
+  margin: 0px auto;
+  /* border-bottom: 1px solid #ece0e0; */
+
+  /* ヘッダレフトとヘッダライトを横並びにする + 上下中央揃え */
+  display: flex;
+  align-items: center;
+}
+
+.header_left {
+  /* ロゴと説明文を横並びにする + 上下中央揃え */
+  display: flex;
+  align-items: center;
+}
+
+.header_left_logo {
+  margin-right: 30px;
+}
+
+.header_left_title {
+  color: #7b7070;
+  font-size: 14px;
+}
+
+.header_right {
+  margin-left: auto;
+
+  /* リンクを横並びにする + 上下中央揃え */
+  display: flex;
+  align-items: center;
+}
+
+.header_right_login, .header_right_sitemap, .header_right_help {
+  color: #7b7070;
+  font-size: 14px;
+  margin: 0px 10px;
+}
+
+
+/* ■■■ 検索条件表示 ■■■ */
+.search_condition_all {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.search_condition_contents {
+  width: 90%;
+  margin: 0px auto;
+  border: 1px solid rgba(112, 133, 162, 0.401);
+  color:rgba(6, 6, 6, 0.401);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.condition_title {
+  padding: 10px;
+  color: rgba(6, 6, 6, 0.648);
+}
+
+.condition_1 {
+  padding: 10px;
+}
+
+
+
+/* ■■■ フッター ■■■ */
+.footer_all {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 70px;
+}
+
+.footer_contents {
+  width: 90%;
+  margin: 0px auto;
+  border-top: 1px solid rgba(112, 133, 162, 0.401);
+}
+
+.footer_link {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text {
+  margin: 10px 20px;
+  color: #7b7070;
+  font-size: 14px;
+}
