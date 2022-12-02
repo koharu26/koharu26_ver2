@@ -9,9 +9,17 @@
           if (param == "area") {
             var areaName = areaChange(paramName[1]);
             return decodeURI(areaName);
+
+          } else if (param == "position0") {
+            return decodeURI("指定なし");
+
+          } else if (param == "gender") {
+            var genderValue = genderChange(paramName[1]);
+            return decodeURI(genderValue);
+            
           } else {
             return decodeURI(paramName[1]);
-          }; 
+          };
         };
     };
 
@@ -37,4 +45,28 @@
             return ("沖縄");
         };
       };
+
+      // 性別の変換 //
+      function genderChange(gender){
+        if (gender == "male") {
+          return ("男性");
+          } else if (gender == "female") {
+            return ("女性");
+          } else {
+            return ("指定なし");
+        };
+      };
   };
+
+
+
+// ■■チェックボックスのチェック状況取得■■
+function checkCondition(check){
+  var checkTarget = document.getElementById(check);
+
+  if (checkTarget.checked) {
+    alert ("check!!");
+  };
+};
+
+

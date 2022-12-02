@@ -50,10 +50,74 @@
               <tr>
                 <td class = "condition_1">日付（勤務開始日）</td>
                 <td class = "condition_1" id = "s_year"></td>
+                <td class = "condition_1" id = "s_month"></td>
+                <td class = "condition_1" id = "s_day"></td>
 
                 <script>
                   var para_s_year = getUrlParam("s_year");
-                  document.getElementById("s_year").innerHTML = para_s_year;
+                  document.getElementById("s_year").innerHTML = para_s_year + "年";
+
+                  var para_s_month = getUrlParam("s_month");
+                  document.getElementById("s_month").innerHTML = para_s_month + "月";
+
+                  var para_s_day = getUrlParam("s_day");
+                  document.getElementById("s_day").innerHTML = para_s_day + "日";
+                </script>
+              </tr>
+              <tr>
+                <td class = "condition_1">日付（勤務終了日）</td>
+                <td class = "condition_1" id = "e_year"></td>
+                <td class = "condition_1" id = "e_month"></td>
+                <td class = "condition_1" id = "e_day"></td>
+
+                <script>
+                  var para_e_year = getUrlParam("e_year");
+                  document.getElementById("e_year").innerHTML = para_e_year + "年";
+
+                  var para_e_month = getUrlParam("e_month");
+                  document.getElementById("e_month").innerHTML = para_e_month + "月";
+
+                  var para_e_day = getUrlParam("e_day");
+                  document.getElementById("e_day").innerHTML = para_e_day + "日";
+                </script>
+              </tr>
+              <tr>
+                <td class = "condition_1">希望ポジション</td>
+                <td class = "condition_1" id = "position" colspan="4"></td>
+                
+                <script>
+                    var position0 = getUrlParam("position0");
+                    var position_html = document.getElementById("position")
+
+                    if (position0 !== undefined) {  //指定なしを選択している場合
+                      document.getElementById("position").innerHTML = position0;
+                    } else {  //指定なしを選択していない場合
+                      document.getElementById("position").innerHTML = "";
+                    
+                      for (var i = 1; i < 5; i++) {
+                        var position_s = getUrlParam("position" + i);
+
+                        if (position_s === undefined) {
+                          continue;
+                        };
+
+                        if (position_html.innerHTML == "") {
+                          position_html.innerHTML = position_s;
+                        } else {
+                          position_html.innerHTML = position_html.innerHTML + "　" + position_s;
+                        };
+                      };
+                    };
+                </script>
+
+              </tr>
+              <tr>
+                <td class = "condition_1">性別</td>
+                <td class = "condition_1" id = "gender"></td>
+                
+                <script>
+                  var gender = getUrlParam("gender");
+                  document.getElementById("gender").innerHTML = gender;
                 </script>
               </tr>
             </table>
